@@ -1,7 +1,6 @@
-
 .header {
-    background-color: #301e4e;
-  }
+  background-color: #301e4e;
+}
   
   .header__wrap {
     align-items: baseline;
@@ -11,9 +10,9 @@
     max-width: 960px;
     padding: 1rem 0;
   }
-  /*
-  title {
-  flex-grow: 1;
+
+.title {
+  text-align: left;
 }
 
   .header__heading {
@@ -47,4 +46,3 @@
     background: white;
     color: #301e4e;
   }
-  */

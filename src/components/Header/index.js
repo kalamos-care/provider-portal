@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import styles from "./header.module.css"
-import { makeStyles } from '@material-ui/core/styles';
 // import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -11,11 +10,11 @@ const drawerWidth = 240;
 
 const Header = () => (
   <AppBar position="absolute" className={styles.header}>
-        <Toolbar className={styles.header__wrap}>
-          <Typography component="h1" variant="h6" color="inherit" noWrap className={styles.title}>
-            Kalamos Care
-          </Typography>
-          <nav profilerole="main" className={styles[`header__nav`]}>
+    <Toolbar className={styles.header__wrap}>
+      <Typography component="h1" variant="h6" color="inherit" noWrap className={styles.title}>
+        Kalamos Care
+      </Typography>
+      <nav profilerole="main" className={styles[`header__nav`]}>
         <Link to="/" className={styles[`header__link`]}>
           Home
         </Link>
@@ -26,8 +25,8 @@ const Header = () => (
           Dashboard
         </Link>
       </nav>
-        </Toolbar>
-      </AppBar>
+    </Toolbar>
+  </AppBar>
   /*
   <header className={styles.header}>
     <div className={styles[`header__wrap`]}>

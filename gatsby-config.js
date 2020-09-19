@@ -15,6 +15,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
   ],
   siteMetadata: {
-    title: 'Kalamos Care',
+    title: 'Kalamos Care Provider Portal',
   },
 };

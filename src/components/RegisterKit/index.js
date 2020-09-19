@@ -1,5 +1,4 @@
 import React from "react"
-import { navigate } from "gatsby"
 import styles from "./register-kit.module.css"
 import { getCurrentUser } from "../../utils/auth"
 

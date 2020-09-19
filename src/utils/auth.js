@@ -13,9 +13,9 @@ export const handleLogin = ({ username, password }) => {
   if (username === `gatsby` && password === `demo`) {
     console.log(`Credentials match! Setting the active user.`)
     return setUser({
-      name: `Jim`,
-      legalName: `James K. User`,
-      email: `jim@example.org`,
+      name: `Jay`,
+      legalName: `Jay Gatsby`,
+      email: `jay@gatsby.org`,
     })
   }
 
