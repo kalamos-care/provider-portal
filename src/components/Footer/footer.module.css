@@ -1,0 +1,16 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 5rem;
+    background-color: #f4effc;
+}
+
+.footer__wrap {
+    align-items: baseline;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    max-width: 640px;
+    padding: 1rem 0;
+}

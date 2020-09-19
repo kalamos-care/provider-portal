@@ -1,0 +1,12 @@
+.status {
+    background: #f4effc;
+    font-size: 87.5%;
+    padding: 0.25rem;
+  }
+  
+  .status__text {
+    color: #1f1135;
+    margin: 0 auto;
+    max-width: 640px;
+    text-align: right;
+  }

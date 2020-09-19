@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'GT-Haptik';
+  src: url(../../fonts/GT-Haptik-Medium-2.woff2);
+}
+
+html,
+body {
+  color: #1b1425;
+  font-size: 18px;
+  line-height: 1.45;
+  font-family: 'GT-Haptik', serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+.sidebar {
+  width: 240px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+* + * {
+  margin-top: 1rem;
+}
+
+body {
+  margin: 0;
+}
+
+li {
+  margin-top: 0.25rem;
+}
+
+code {
+  background: #f4effc;
+  border-radius: 0.125rem;
+  font-weight: bold;
+  padding: 0.125rem 0.25rem;
+}
