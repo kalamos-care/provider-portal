@@ -1,8 +1,11 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
+import CssBaseline from '@material-ui/core/CssBaseline'
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography'
 import Header from "../Header"
 // import Sidebar from "../Sidebar"
 import Footer from "../Footer"
@@ -16,9 +19,9 @@ import { isLoggedIn } from "../../utils/auth"
 
 function Layout({ children }) {
   const loggedIn = isLoggedIn()
-
   return (
     <div>
+            <CssBaseline />
       <Helmet title="Kalamos Care" />
       <Header />
       {/* <Sidebar /> */}
@@ -29,9 +32,7 @@ function Layout({ children }) {
           </Box>
         </Container>
       </main>
-      { loggedIn && (
-        <Footer />
-      )}
+      <Footer />
     </div>
   )
 }

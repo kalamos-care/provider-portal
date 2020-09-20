@@ -5,6 +5,9 @@ import Layout from "../components/Layout"
 
 const Index = () => (
   <Layout>
+    <Typography variant="h4" component="h1" gutterBottom>
+          Remote Patient Monitoring made easy.
+        </Typography>
       <p>
         This is a simple example of creating dynamic apps with Gatsby that
         require user authentication. It uses concepts from the
@@ -23,13 +26,15 @@ const Index = () => (
         <Typography variant="h4" component="h1" gutterBottom>
           Gatsby v4-beta example
         </Typography>
+        <p>
         <Link to="/about" color="secondary">
           Go to the about page
         </Link>
-         
+        </p><p>
         <Link to="/app" color="secondary">
           Go to the app page
         </Link>
+        </p>
   </Layout>
 )
 

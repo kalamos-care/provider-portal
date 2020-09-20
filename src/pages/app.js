@@ -14,13 +14,12 @@ import Status from "../components/Status"
 
 const App = () => (
   <Layout>
-    {/* <Sidebar /> */}
     <Status />
     <Router>
       <PrivateRoute path="/app/settings" component={AccountSettings} />
       <PrivateRoute path="/app/dashboard" component={Dashboard} />
       <PrivateRoute path="/app/register-kit" component={RegisterKit} />
-      <PrivateRoute path="/app/messages" compnonent={Messages} />
+      <PrivateRoute path="/app/messages" component={Messages} />
       <Login path="/app/login" />
     </Router>
   </Layout>

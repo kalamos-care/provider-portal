@@ -13,35 +13,62 @@ import Settings from '@material-ui/icons/Settings';
 //Styles
 import styles from "./footer.module.css"
 
+import { isLoggedIn } from "../../utils/auth"
+
 // const [value, setValue] = React.useState(0);
 // this component is organized differently than my others
 
-export default function Footer() {
+function Footer() {
   const [value, setValue] = React.useState('recents');
+  const loggedIn = isLoggedIn();
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
+  if (loggedIn) {
   return (
-    <BottomNavigation
-      value={value}
-      onChange={(event, newValue) => {
-        setValue(newValue);
-      }}
-      showLabels
-      className={styles.footer}
-    >
-      <BottomNavigationAction label="Settings" icon={<Settings />}></BottomNavigationAction>
-      <BottomNavigationAction label="Dashboard" icon={<Dashboard />} />
-      <BottomNavigationAction label="Messages" icon={<Chat />} />
-    </BottomNavigation>
-    /*  
-      <footer className={styles.footer}>
-      const [value, setValue] = React.useState(0);
-        <Container maxWidth="sm" className={styles[`footer__wrap`]}>
-        </Container>
-          </footer>
-    */
-  );
+      <BottomNavigation
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+        showLabels
+        className={styles.footer}
+      >
+        <BottomNavigationAction
+          component={Link}
+          to="/app/settings"
+          label="Settings"
+          value="settings"
+          icon={<Settings />}
+        />
+        <BottomNavigationAction
+          component={Link}
+          to="/app/dashboard"
+          label="Dashboard"
+          value="dashboard"
+          icon={<Dashboard />}
+        />
+        <BottomNavigationAction
+          component={Link}
+          to="/app/messages"
+          label="Messages"
+          value="messages"
+          icon={<Chat />}
+        />
+      </BottomNavigation>
+    )}
+    return (
+      <Typography variant="body2" color="textSecondary" align="center">
+      {'Copyright © '}
+      <Link color="inherit" href="https://kalamos.care">
+        Kalamos Care
+        </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+    )
 }
+
+export default Footer
