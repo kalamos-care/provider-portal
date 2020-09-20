@@ -1,10 +1,11 @@
 import React from "react"
 import { Router } from "@reach/router"
 import Layout from "../components/Layout"
-import Dashboard from "../components/Dashboard"
+import Patients from "../components/Patients"
 import AccountSettings from "../components/AccountSettings"
 import RegisterKit from "../components/RegisterKit"
 import Messages from "../components/Messages"
+import Notifications from "../components/Notifications"
 import Login from "../components/Login"
 import PrivateRoute from "../components/PrivateRoute"
 import Status from "../components/Status"
@@ -14,10 +15,10 @@ import Status from "../components/Status"
 
 const App = () => (
   <Layout>
-    <Status />
     <Router>
       <PrivateRoute path="/app/settings" component={AccountSettings} />
-      <PrivateRoute path="/app/dashboard" component={Dashboard} />
+      <PrivateRoute path="/app/patients" component={Patients} />
+      <PrivateRoute path="/app/notifications" component={Notifications} />
       <PrivateRoute path="/app/register-kit" component={RegisterKit} />
       <PrivateRoute path="/app/messages" component={Messages} />
       <Login path="/app/login" />

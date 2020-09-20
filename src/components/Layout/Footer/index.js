@@ -2,18 +2,18 @@ import React from "react"
 import { Link } from "gatsby"
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-import Login from "../Login"
-import PrivateRoute from "../PrivateRoute"
+import Login from "../../Login"
+import PrivateRoute from "../../PrivateRoute"
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 // Icons
 import Chat from '@material-ui/icons/Chat';
-import Dashboard from '@material-ui/icons/Dashboard';
-import Settings from '@material-ui/icons/Settings';
+import Folder from '@material-ui/icons/Folder';
+import Notifications from '@material-ui/icons/Notifications';
 //Styles
 import styles from "./footer.module.css"
 
-import { isLoggedIn } from "../../utils/auth"
+import { isLoggedIn } from "../../../utils/auth"
 
 // const [value, setValue] = React.useState(0);
 // this component is organized differently than my others
@@ -27,7 +27,7 @@ function Footer() {
   };
 
   if (loggedIn) {
-  return (
+    return (
       <BottomNavigation
         value={value}
         onChange={(event, newValue) => {
@@ -38,17 +38,17 @@ function Footer() {
       >
         <BottomNavigationAction
           component={Link}
-          to="/app/settings"
-          label="Settings"
-          value="settings"
-          icon={<Settings />}
+          to="/app/notifications"
+          label="Notifications"
+          value="notifications"
+          icon={<Notifications />}
         />
         <BottomNavigationAction
           component={Link}
-          to="/app/dashboard"
-          label="Dashboard"
-          value="dashboard"
-          icon={<Dashboard />}
+          to="/app/patients"
+          label="Patients"
+          value="patients"
+          icon={<Folder />}
         />
         <BottomNavigationAction
           component={Link}
@@ -58,17 +58,22 @@ function Footer() {
           icon={<Chat />}
         />
       </BottomNavigation>
-    )}
-    return (
-      <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://kalamos.care">
-        Kalamos Care
-        </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
     )
+  }
+  return (
+    <footer className={styles.footer}>
+      <div  className={styles["footer__wrap"]}>
+      <Typography variant="body2" color="textSecondary" align="center">
+        {'Copyright © '}
+        <Link color="inherit" href="https://kalamos.care">
+          Kalamos Care
+        </Link>{' '}
+        {new Date().getFullYear()}
+        {'.'}
+      </Typography>
+      </div>
+    </footer>
+  )
 }
 
 export default Footer
