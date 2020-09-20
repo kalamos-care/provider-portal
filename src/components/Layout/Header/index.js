@@ -12,6 +12,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
+import Button from '@material-ui/core/Button'
 import { getCurrentUser, isLoggedIn, logout } from "../../../utils/auth"
 
 
@@ -29,68 +30,73 @@ function Header() {
     setAnchorEl(null);
   };
 
-
   return (
-    <AppBar position="static" className={styles.header}>
-      <Toolbar className={styles[`header__wrap`]}>
-        <Typography 
-          component={Link}
-          to="/"
-          variant="h6" 
-          className={styles[`header__heading`,'header__wrap']}
-        >
-          Kalamos Care
+    <div className={styles.header}>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography
+            variant="h6"
+            className={styles.title}
+            // component={Link}
+            // to="/"
+          >
+            Kalamos Care
         </Typography>
-        {loggedIn && (
-          <div>
-            <IconButton
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleMenu}
+          {!loggedIn && (
+            <Button
               color="inherit"
+              component={Link}
+              to="/app/login"
             >
-              <AccountCircle />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorEl}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={open}
-              onClose={handleClose}
-            >
-              <MenuItem
-                onClick={handleClose}
-                component={Link}
-                to="/app/settings"
+              Login
+            </Button>
+          )}
+          {loggedIn && (
+            <Button color="inherit">
+              <IconButton
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleMenu}
+                color="inherit"
               >
-                Settings
-              </MenuItem>
-              <MenuItem onClick={event => {
-                event.preventDefault()
-                logout(() => navigate(`/app/login`))
-              }}>
-                Log Out
-              </MenuItem>
-            </Menu>
-          </div>
-        )}
-        {!loggedIn && (
-          <Link to="/app/login" className={styles[`header__link`]}>
-            Login
-          </Link>
-        )}
-      </Toolbar>
-    </AppBar>
-  )
+                <AccountCircle />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                open={open}
+                onClose={handleClose}
+              >
+                <MenuItem
+                  onClick={handleClose}
+                  component={Link}
+                  to="/app/settings"
+                >
+                  Settings
+                </MenuItem>
+                <MenuItem onClick={event => {
+                  event.preventDefault()
+                  logout(() => navigate(`/app/login`))
+                }}>
+                  Log Out
+                </MenuItem>
+              </Menu>
+            </Button>
+          )}
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
 }
 
 export default Header

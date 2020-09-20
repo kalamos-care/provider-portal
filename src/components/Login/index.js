@@ -21,7 +21,7 @@ import axios from 'axios';
 
 const Form = ({ handleSubmit, handleUpdate }) => {
   return (
-    <div className={styles.paper}>
+    <div className={styles.login}>
       <Typography component="h1" variant="h5">
         Sign in
       </Typography>
