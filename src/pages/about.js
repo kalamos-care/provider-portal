@@ -10,6 +10,14 @@ export default function About() {
           Gatsby v4-beta example
         </Typography>
         <Link to="/">Go to the main page</Link>
+        <Typography variant="body2" color="textSecondary" align="center">
+        {'Copyright © '}
+        <Link to="https://kalamos.care/">
+          Kalamos Care
+      </Link>{' '}
+        {new Date().getFullYear()}
+        {'.'}
+      </Typography>
     </Layout>
   );
 }
