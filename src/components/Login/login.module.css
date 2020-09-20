@@ -38,3 +38,9 @@
   .form__button:focus {
     background-color: color(#67568c lightness(-20%));
   }
+
+  paper {
+    /* display: flex;
+    flex-direction: column;
+     align-items: center; */
+  }
