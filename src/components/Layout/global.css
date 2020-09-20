@@ -9,9 +9,14 @@ body {
   font-size: 18px;
   line-height: 1.45;
   font-family: 'GT-Haptik', serif;
+
+  /* min-height: 100vh; */
+}
+
+root {
   display: flex;
   flex-direction: column;
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 
 *,
