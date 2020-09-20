@@ -65,7 +65,7 @@ function Footer() {
       <div className={styles["footer__wrap"]}>
       <Typography variant="body2" color="textSecondary" align="center">
         {'Copyright © '}
-        <Link color="inherit" href="https://kalamos.care">
+        <Link to="https://register.kalamos.care" color="secondary">
           Kalamos Care
         </Link>{' '}
         {new Date().getFullYear()}

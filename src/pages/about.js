@@ -1,6 +1,6 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import Link from '../components/Link';
+import Link from '@material-ui/core/Link';
 import Layout from "../components/Layout"
 
 export default function About() {

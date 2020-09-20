@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{w2l6:function(t,e,o){"use strict";o.r(e);var n=o("q1tI"),a=o.n(n),r=o("ofer"),c=o("Zttt");e.default=function(){return a.a.createElement(c.a,null,a.a.createElement(r.a,{variant:"h4",component:"h1",gutterBottom:!0},"Do Not Pass Go. Do Not Collect $200."))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-cb93ee17541139463395.js.map

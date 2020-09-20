@@ -7,10 +7,9 @@
 }
 
 .footer__wrap {
-    align-items: baseline;
+    /* align-items: baseline;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
-    max-width: 640px;
+    grid-template-columns: repeat(2, 1fr); */
+    margin: auto;
     padding: 1rem 0;
 }

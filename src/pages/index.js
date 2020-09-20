@@ -1,6 +1,6 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import Link from '../components/Link';
+import { Link } from 'gatsby';
 import Layout from "../components/Layout"
 
 const Index = () => (
@@ -17,11 +17,6 @@ const Index = () => (
         </a>
       {` `}
         of the “Building Apps with Gatsby” documentation.
-      </p>
-    <p>
-      For the full experience, go to
-        {` `}
-      <Link to="/app/profile">your profile</Link>.
       </p>
     <Typography variant="h4" component="h1" gutterBottom>
       Gatsby v4-beta example
