@@ -1,8 +1,7 @@
 .main {
     margin-top: 0;
     flex-grow: 1;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: auto;
-    padding-top: 90px;
   }
 

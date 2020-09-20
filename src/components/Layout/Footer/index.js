@@ -62,7 +62,7 @@ function Footer() {
   }
   return (
     <footer className={styles.footer}>
-      <div  className={styles["footer__wrap"]}>
+      <div className={styles["footer__wrap"]}>
       <Typography variant="body2" color="textSecondary" align="center">
         {'Copyright © '}
         <Link color="inherit" href="https://kalamos.care">

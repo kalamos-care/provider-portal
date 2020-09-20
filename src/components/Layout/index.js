@@ -5,7 +5,6 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 import Header from "./Header"
-// import Sidebar from "../Sidebar"
 import Footer from "./Footer"
 
 // Global styles and component-specific styles.
@@ -21,7 +20,6 @@ function Layout({ children }) {
       <CssBaseline />
       <Helmet title="Kalamos Care" />
       <Header />
-      {/* <Sidebar /> */}
       <main className={styles.main}>
         <Container maxWidth="md">
           <Box my={4}>
