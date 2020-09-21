@@ -2,10 +2,12 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import Layout from "../components/Layout"
+import Grid from '@material-ui/core/Grid';
 
 export default function About() {
   return (
     <Layout>
+      <Grid container spacing={2}>
       <Typography variant="h6" component="h1" gutterBottom>
         I STARTED KALAMOS BECAUSE SEX SCARED THE $@*! OUT OF ME
       </Typography>
@@ -20,9 +22,12 @@ export default function About() {
       </p>
       <p>
         I hope you’ll join the fight with me.</p>
+        <div class="index-nav">
       <p>
         <Link to="/">Go to the main page</Link>
       </p>
+      </div>
+      </Grid>
     </Layout>
   );
 }
