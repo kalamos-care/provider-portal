@@ -31,7 +31,6 @@ function Header() {
   };
 
   return (
-    <div className={styles.header}>
       <AppBar position="static">
         <Toolbar>
           <Typography
@@ -95,7 +94,6 @@ function Header() {
           )}
         </Toolbar>
       </AppBar>
-    </div>
   );
 }
 

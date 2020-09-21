@@ -6,7 +6,7 @@ import Layout from "../components/Layout"
 export default function About() {
   return (
     <Layout>
-      <Typography variant="h4" component="h1" gutterBottom>
+      <Typography variant="h6" component="h1" gutterBottom>
         I STARTED KALAMOS BECAUSE SEX SCARED THE $@*! OUT OF ME
       </Typography>
       <p>

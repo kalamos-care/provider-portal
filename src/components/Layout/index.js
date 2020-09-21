@@ -18,15 +18,19 @@ function Layout({ children }) {
     <root className="root">
       <CssBaseline />
       <Helmet title="Kalamos Care" />
-      <Header />
+      <div class="header">
+        <Header />
+      </div>
       <main className={styles.main}>
-        <Container maxWidth="md">
+        <Container maxWidth="sm">
           <Box my={4}>
             {children}
           </Box>
         </Container>
       </main>
-      <Footer />
+      <div class="footer">
+        <Footer />
+      </div>
     </root>
   )
 }

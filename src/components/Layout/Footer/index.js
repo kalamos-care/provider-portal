@@ -28,7 +28,6 @@ function Footer() {
 
   if (loggedIn) {
     return (
-      <footer className={styles.footer}>
       <BottomNavigation
         value={value}
         onChange={(event, newValue) => {
@@ -36,7 +35,6 @@ function Footer() {
         }}
         showLabels
         className={styles["bottom__nav"]}
-        color="secondary"
       >
         <BottomNavigationAction
           component={Link}
@@ -60,12 +58,10 @@ function Footer() {
           icon={<Chat />}
         />
       </BottomNavigation>
-      </footer>
     )
   }
   return (
-    <footer className={styles.footer}>
-      <div className={styles["footer__nav"]}>
+    <div className={styles["footer__nav"]}>
       <Typography variant="body2" color="textSecondary" align="center">
         {'Copyright © '}
         <Link to="https://register.kalamos.care" color="secondary">
@@ -75,7 +71,6 @@ function Footer() {
         {'.'}
       </Typography>
       </div>
-    </footer>
   )
 }
 
