@@ -15,7 +15,7 @@ function Layout({ children }) {
   const loggedIn = isLoggedIn()
 
   return (
-    <root>
+    <root className="root">
       <CssBaseline />
       <Helmet title="Kalamos Care" />
       <Header />

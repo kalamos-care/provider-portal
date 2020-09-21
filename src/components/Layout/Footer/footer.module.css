@@ -1,15 +1,24 @@
 .footer {
-    position: absolute;
+    display:flex;
+    flex-shrink: 1;
     bottom: 0;
     width: 100%;
-    min-height: 5rem;
+    min-height: auto;
+    background-color: #f4effc;
+}
+
+.bottom__nav {
+    display: grid;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* min-height: 81px; */
+    /* this shouldn't be hardcoded */
     background-color: #f4effc !important;
 }
 
-.footer__wrap {
-    /* align-items: baseline;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); */
+.footer__nav {
+    position: relative;
     margin: auto;
     padding: 1rem 0;
 }

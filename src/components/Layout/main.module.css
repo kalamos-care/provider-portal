@@ -1,7 +1,6 @@
 .main {
-    margin-top: 0;
+    flex: 1 100%;
     flex-grow: 1;
-    /* height: 100vh; */
     overflow: auto;
   }
 

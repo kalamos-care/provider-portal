@@ -9,14 +9,13 @@ body {
   font-size: 18px;
   line-height: 1.45;
   font-family: 'GT-Haptik', serif;
-
-  /* min-height: 100vh; */
 }
 
-root {
+.root {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  /* align-items: stretch; */
+  max-height: 100vh;
 }
 
 *,
