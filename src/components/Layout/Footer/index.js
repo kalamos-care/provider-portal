@@ -36,6 +36,7 @@ function Footer() {
         showLabels
         className={styles["bottom__nav"]}
       >
+        
         <BottomNavigationAction
           component={Link}
           to="/app/notifications"
@@ -70,7 +71,7 @@ function Footer() {
         {new Date().getFullYear()}
         {'.'}
       </Typography>
-      </div>
+    </div>
   )
 }
 
