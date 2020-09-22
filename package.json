@@ -8,6 +8,7 @@
     "@material-ui/styles": "latest",
     "gatsby": "latest",
     "gatsby-plugin-cname": "^1.0.0",
+    "gatsby-plugin-manifest": "^2.4.30",
     "gatsby-plugin-material-ui": "latest",
     "gatsby-plugin-react-helmet": "latest",
     "react": "latest",

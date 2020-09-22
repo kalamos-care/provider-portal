@@ -36,7 +36,7 @@ const Form = ({ handleSubmit, handleUpdate }) => {
           navigate(`/app/profile`)
         }}
       >
-        <Grid container>
+        <Grid container spacing={3}>
           <Grid item>
             <TextField
               variant="outlined"
@@ -91,7 +91,7 @@ const Form = ({ handleSubmit, handleUpdate }) => {
                 Forgot password?
               </Link>
             </Grid>
-            <Grid item>
+            <Grid item xs>
               <Link href="/signup" variant="body2">
                 {"Don't have an account? Sign Up"}
               </Link>

@@ -19,7 +19,9 @@ function Layout({ children }) {
   return (
     <root className="root">
       <CssBaseline />
-      <Helmet title="Kalamos Care" />
+      <Helmet title="Kalamos Care">
+        
+      </Helmet>
       <div class="header">
         <Header />
       </div>
