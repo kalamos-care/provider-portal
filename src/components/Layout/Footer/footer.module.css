@@ -3,14 +3,11 @@
     width: 100%;
     position: absolute;
     bottom: 0;
-    /* min-height: 81px; */
-    /* this shouldn't be hardcoded */
     background-color: #f4effc !important;
 }
 
 .footer__nav {
     display: flex;
     position: relative;
-    margin: auto;
-    padding: 1rem 0;
+    width: 100%;
 }
