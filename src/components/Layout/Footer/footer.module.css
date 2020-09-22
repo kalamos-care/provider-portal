@@ -7,7 +7,7 @@
 }
 
 .footer__nav {
-    display: grid;
+    display: flex;
     position: relative;
     width: 100%;
 }
