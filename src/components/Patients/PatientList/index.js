@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import List from '@material-ui/core/List'
 import { FixedSizeList } from 'react-window';
 // random imports
 import Paper from '@material-ui/core/Paper';
@@ -43,7 +44,7 @@ export default function VirtualizedList() {
                 </IconButton>
             </Paper>
             */}
-            <FixedSizeList height={400} width={300} itemSize={46} itemCount={200}>
+            <FixedSizeList height={600} width={300} itemSize={46} itemCount={200}>
                 {renderRow}
             </FixedSizeList>
         </div>
