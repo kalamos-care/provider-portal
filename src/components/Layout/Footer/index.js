@@ -36,7 +36,6 @@ function Footer() {
         showLabels
         className={styles["bottom__nav"]}
       >
-        
         <BottomNavigationAction
           component={Link}
           to="/app/notifications"
@@ -61,18 +60,22 @@ function Footer() {
       </BottomNavigation>
     )
   }
-  return (
-    <div className={styles["footer__nav"]}>
-      <Typography variant="body2" color="textSecondary" align="center">
-        {'Copyright © '}
-        <Link to="https://register.kalamos.care" color="secondary">
-          Kalamos Care
+  else {
+    return (
+      <div className={styles["footer__nav"]}>
+        <div className={styles["footer__copyright"]}>
+        <Typography variant="body2" color="textSecondary" align="center">
+          {'Copyright © '}
+          <Link to="https://register.kalamos.care" color="secondary">
+            Kalamos Care
         </Link>{' '}
-        {new Date().getFullYear()}
-        {'.'}
-      </Typography>
-    </div>
-  )
+          {new Date().getFullYear()}
+          {'.'}
+        </Typography>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default Footer
