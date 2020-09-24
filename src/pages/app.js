@@ -8,6 +8,7 @@ import Messages from "../components/Messages"
 import Notifications from "../components/Notifications"
 import Login from "../components/Login"
 import PrivateRoute from "../components/PrivateRoute"
+import Footer from "../components/Layout/Footer"
 
 // probably need to set the state
 
